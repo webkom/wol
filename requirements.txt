@@ -1,0 +1,5 @@
+PyYAML==3.11
+pyaml==15.03.1
+python-raven==0.7
+requests==2.6.0
+wakeonlan==0.2.2
