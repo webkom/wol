@@ -4,6 +4,7 @@ import logging
 import yaml
 import time
 import os
+import sys
 
 logger = logging.getLogger('wol')
 
@@ -11,7 +12,7 @@ cwd = os.path.dirname(os.path.abspath(__file__))
 try:
     conf = yaml.safe_load(open(cwd + '/config.yml'))
 except IOError:
-    logger.error('Can\'t find file config.yml')
+    sys.exit('Can\'t find file config.yml')
 
 target_servers = conf['servers']
 
